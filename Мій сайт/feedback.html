@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Залишити відгук — Pets Club</title>
+  <link rel="stylesheet" href="css/bulma.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    function handleChoice(value) {
+      if (value === 'negative') {
+        window.location.href = 'okak.html'; // переход на главную
+      } else {
+        document.getElementById('feedback-form').style.display = 'block';
+        document.getElementById('choice-block').style.display = 'none';
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <!-- Меню -->
+  <div class="menu-bar">
+    <img src="images/image2.jpg" alt="Логотип" class="menu-logo">
+    <div class="menu-links">
+      <a href="index.html" class="button is-info is-outlined">Головна</a>
+      <a href="index2.html" class="button is-info is-outlined">Про нас</a>
+      <a href="index3.html" class="button is-info is-outlined">Контакти</a>
+      <a href="services.html" class="button is-info is-outlined">Послуги</a>
+      <a href="feedback.html" class="button is-info is-outlined is-active">Залишити відгук</a>
+    </div>
+  </div>
+
+  <!-- Контент -->
+  <section class="section has-text-centered">
+    <div class="container">
+      <h1 class="title is-3 has-text-info">Залишити відгук</h1>
+
+      <div id="choice-block" class="box" style="max-width: 500px; margin: 0 auto;">
+        <p class="subtitle is-5">Ваш відгук позитивний чи негативний?</p>
+        <div class="buttons is-centered mt-4">
+          <button class="button is-success" onclick="handleChoice('positive')">Позитивний</button>
+          <button class="button is-danger" onclick="handleChoice('negative')">Негативний</button>
+        </div>
+      </div>
+
+      <div id="feedback-form" class="box" style="display: none; max-width: 600px; margin: 0 auto;">
+        <form>
+          <div class="field">
+            <label class="label">Ваше ім’я</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="Введіть ім’я">
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Ваш відгук</label>
+            <div class="control">
+              <textarea class="textarea" placeholder="Напишіть свій відгук тут..."></textarea>
+            </div>
+          </div>
+
+          <div class="control mt-4">
+            <button class="button is-info is-fullwidth">Надіслати</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

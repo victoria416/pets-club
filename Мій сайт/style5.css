@@ -1,0 +1,49 @@
+body {
+  background-color: black;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  color: white;
+}
+
+.container {
+  background-color: black;
+}
+
+.dark-box {
+  background-color: #1a1a1a;
+  padding: 3rem;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 100%;
+  opacity: 0.6;
+  height: auto;
+}
+
+.image-side img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.custom-columns {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.okak {
+  opacity: 0.9;
+}
+
+p.big404 {
+  font-size: clamp(90px, 25vw, 200px); /* Адаптивный размер */
+  font-weight: 700;
+  font-family: 'Oswald', sans-serif;
+  color: rgba(51, 50, 50, 0.648);
+  margin: 0;
+  text-align: center;
+}

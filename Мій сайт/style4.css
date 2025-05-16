@@ -1,0 +1,235 @@
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background-color: rgb(0, 0, 0);
+  font-family: 'Poppins', sans-serif;
+}
+
+.baner-container {
+  background-color: rgb(255, 255, 255);
+}
+
+.baner {
+  width: 100%;
+  height: 380px;
+  display: block;
+  margin-top: 90px;
+  opacity: 1;
+
+}
+.content {
+  position: relative;
+  z-index: 2;
+}
+.section {
+  margin-top: 150px;
+  background-color: #0d98d8;
+  border-color: #0d98d8;
+}
+@keyframes perevagi {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.7;
+  }
+}
+
+.menu-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 110px;
+  gap: 40px;
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: -1px;
+  left: 0;
+  background-color: black;
+  border-radius: 10px;
+  border: 2px solid #14b0f8a1;
+  box-shadow: 0 0 8px #14b0f8b4, 0 0 15px #14b0f888, 0 0 20px #14b0f847;
+  z-index: 10;
+}
+
+.menu-logo {
+  height: 55px;
+  padding-left: 50px;
+  display: flex;
+}
+.section {
+  background-color: rgba(18, 20, 20, 0.973);
+  border-radius: 5px;
+  color: white;
+}
+.menu-links {
+  display: flex;
+  gap: 20px;
+}
+
+.button {
+  background-color: black;
+  color: rgb(255, 250, 250);
+  border-color: white;
+}
+
+.button:hover {
+  background-color: #14b0f8;
+  color: hsl(120, 4%, 5%);
+}
+.section h1.title,
+.section h2.title {
+  font-weight: 700;
+  color: #00d1b2; /* фирменный цвет */
+}
+
+/* Контейнер с контактами */
+.columns .column p {
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+}
+
+/* Карта */
+iframe {
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* Форма зворотного зв’язку */
+form .field {
+  margin-bottom: 1.5rem;
+}
+
+textarea.textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.button.is-info.is-fullwidth {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Блок формы */
+.box {
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgb(15, 14, 14);
+  background-color: #ffffff;
+}
+
+/* Медиа-запит для мобільних */
+@media (max-width: 768px) {
+  .menu-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-links {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .menu-links .button {
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+.footer {
+  background-color: #000000;
+  padding: 2rem 1.5rem;
+  color: #ffffff;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.footer-logo img {
+  height: 60px;
+  margin-bottom: 0.5rem;
+}
+
+.footer-links ul,
+.footer-contacts {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #999;
+}
+@media (max-width: 768px) {
+  .menu-logo {
+    padding-left: 0;
+    height: 45px;
+  }
+
+  .menu-links {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .baner {
+    height: auto;
+    margin-top: 110px;
+  }
+
+  .columns {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+  .box {
+    margin: 1rem auto !important;
+    padding: 1.5rem;
+  }
+
+  form .field .input,
+  form .field .textarea {
+    font-size: 1rem;
+  }
+
+  iframe {
+    height: 250px;
+  }
+
+  .section {
+    margin-top: 80px;
+    padding: 2rem 1rem;
+  }
+
+  .footer-logo,
+  .footer-links,
+  .footer-contacts,
+  .footer-social {
+    text-align: center;
+  }
+
+  .footer-links ul li,
+  .footer-contacts p {
+    font-size: 0.95rem;
+  }
+
+  .footer-social a img {
+    margin: 0 8px;
+  }
+}
